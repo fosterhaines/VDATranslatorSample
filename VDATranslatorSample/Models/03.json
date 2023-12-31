@@ -142,7 +142,7 @@
       "Elements": [
         {
           "Id": "02",
-          "Desc": "VERSION NUMBER",
+          "Desc": "Version no.",
           "Required": true,
           "MinLength": 2,
           "MaxLength": 2
@@ -214,75 +214,129 @@
       "Elements": [
         {
           "Id": "01",
-          "Desc": "SEGMENT NAME",
-          "MinLength": 3,
-          "MaxLength": 3
-        },
-        {
-          "Id": "02",
-          "Desc": "VERSION NUMBER",
+          "Desc": "Version no.",
           "MinLength": 2,
           "MaxLength": 2
         },
         {
-          "Id": "03",
-          "Desc": "Data &#1074;&#1026;&#8220; receiver no.",
+          "Id": "02",
+          "Desc": "Shipment load reference no.",
           "MinLength": 0,
-          "MaxLength": 9
+          "MaxLength": 8
+        },
+        {
+          "Id": "03",
+          "Desc": "Plant supplier",
+          "MinLength": 0,
+          "MaxLength": 3
         },
         {
           "Id": "04",
-          "Desc": "Data &#1074;&#1026;&#8220; sender no.",
+          "Desc": "Carrier no.",
           "MinLength": 0,
-          "MaxLength": 9
+          "MaxLength": 14
         },
         {
           "Id": "05",
-          "Desc": "Old transmission no.",
-          "MinLength": 0,
-          "MaxLength": 5
-        },
-        {
-          "Id": "06",
-          "Desc": "New transmission no.",
-          "MinLength": 0,
-          "MaxLength": 5
-        },
-        {
-          "Id": "07",
-          "Desc": "Transmission data",
+          "Desc": "Carrier transfer - date",
           "MinLength": 0,
           "MaxLength": 6
         },
         {
-          "Id": "08",
-          "Desc": "Sub-supplier no.",
+          "Id": "06",
+          "Desc": "Carrier transfer-time",
           "MinLength": 0,
-          "MaxLength": 9
+          "MaxLength": 4
+        },
+        {
+          "Id": "07",
+          "Desc": "Shipment weight gross",
+          "MinLength": 0,
+          "MaxLength": 7
+        },
+        {
+          "Id": "08",
+          "Desc": "Shipment weight net",
+          "MinLength": 0,
+          "MaxLength": 7
         },
         {
           "Id": "09",
-          "Desc": "Carrier no.",
+          "Desc": "Pre-payment of charges key",
           "MinLength": 0,
-          "MaxLength": 9
+          "MaxLength": 2
         },
         {
           "Id": "10",
-          "Desc": "Key to stockist",
+          "Desc": "Carrier transmission key",
           "MinLength": 0,
           "MaxLength": 1
         },
         {
           "Id": "11",
-          "Desc": "Delivery code",
+          "Desc": "Number of packages",
+          "MinLength": 0,
+          "MaxLength": 4
+        },
+        {
+          "Id": "12",
+          "Desc": "Transport partner identification",
+          "MinLength": 0,
+          "MaxLength": 14
+        },
+        {
+          "Id": "13",
+          "Desc": "Key to means of transport",
+          "MinLength": 0,
+          "MaxLength": 2
+        },
+        {
+          "Id": "14",
+          "Desc": "Means of transport no.",
+          "MinLength": 0,
+          "MaxLength": 25
+        },
+        {
+          "Id": "15",
+          "Desc": "Code for item 17",
           "MinLength": 0,
           "MaxLength": 1
         },
         {
-          "Id": "12",
+          "Id": "16",
+          "Desc": "Content in accordance with item 16",
+          "MinLength": 0,
+          "MaxLength": 8
+        },
+        {
+          "Id": "17",
+          "Desc": "Target arrival date",
+          "MinLength": 0,
+          "MaxLength": 6
+        },
+        {
+          "Id": "18",
+          "Desc": "Target arrival time",
+          "MinLength": 0,
+          "MaxLength": 4
+        },
+        {
+          "Id": "19",
+          "Desc": "Load metre",
+          "MinLength": 0,
+          "MaxLength": 3
+        },
+        {
+          "Id": "20",
+          "Desc": "Truck type code",
+          "MinLength": 0,
+          "MaxLength": 1
+        },
+        {
+          "Id": "21",
           "Desc": "Empty",
           "MinLength": 0,
-          "MaxLength": 69
+          "MaxLength": 3
         }
       ]
     },
@@ -290,75 +344,123 @@
       "Elements": [
         {
           "Id": "01",
-          "Desc": "SEGMENT NAME",
+          "Desc": "Version No.",
           "MinLength": 3,
           "MaxLength": 3
         },
         {
           "Id": "02",
-          "Desc": "VERSION NUMBER",
-          "MinLength": 2,
-          "MaxLength": 2
+          "Desc": "Delivery note no.",
+          "MinLength": 0,
+          "MaxLength": 8
         },
         {
           "Id": "03",
-          "Desc": "Data &#1074;&#1026;&#8220; receiver no.",
-          "MinLength": 0,
-          "MaxLength": 9
-        },
-        {
-          "Id": "04",
-          "Desc": "Data &#1074;&#1026;&#8220; sender no.",
-          "MinLength": 0,
-          "MaxLength": 9
-        },
-        {
-          "Id": "05",
-          "Desc": "Old transmission no.",
-          "MinLength": 0,
-          "MaxLength": 5
-        },
-        {
-          "Id": "06",
-          "Desc": "New transmission no.",
-          "MinLength": 0,
-          "MaxLength": 5
-        },
-        {
-          "Id": "07",
-          "Desc": "Transmission data",
+          "Desc": "Despatch date",
           "MinLength": 0,
           "MaxLength": 6
         },
         {
-          "Id": "08",
-          "Desc": "Sub-supplier no.",
+          "Id": "04",
+          "Desc": "Point of unloading",
           "MinLength": 0,
-          "MaxLength": 9
+          "MaxLength": 5
+        },
+        {
+          "Id": "05",
+          "Desc": "Despatch type",
+          "MinLength": 0,
+          "MaxLength": 2
+        },
+        {
+          "Id": "06",
+          "Desc": "Customer reference",
+          "MinLength": 0,
+          "MaxLength": 4
+        },
+        {
+          "Id": "07",
+          "Desc": "Contract/order no.",
+          "MinLength": 0,
+          "MaxLength": 12
+        },
+        {
+          "Id": "08",
+          "Desc": "Process code",
+          "MinLength": 0,
+          "MaxLength": 2
         },
         {
           "Id": "09",
-          "Desc": "Carrier no.",
+          "Desc": "Empty 1",
+          "MinLength": 0,
+          "MaxLength": 4
+        },
+        {
+          "Id": "10",
+          "Desc": "Customer plant",
+          "MinLength": 0,
+          "MaxLength": 3
+        },
+        {
+          "Id": "11",
+          "Desc": "Consignment",
+          "MinLength": 0,
+          "MaxLength": 8
+        },
+        {
+          "Id": "12",
+          "Desc": "Consignee",
           "MinLength": 0,
           "MaxLength": 9
         },
         {
-          "Id": "10",
-          "Desc": "Key to stockist",
+          "Id": "13",
+          "Desc": "Empty 2",
           "MinLength": 0,
           "MaxLength": 1
         },
         {
-          "Id": "11",
-          "Desc": "Delivery code",
+          "Id": "14",
+          "Desc": "Customer storage location",
           "MinLength": 0,
-          "MaxLength": 1
+          "MaxLength": 7
         },
         {
-          "Id": "12",
-          "Desc": "Empty",
+          "Id": "15",
+          "Desc": "Supplier no.",
           "MinLength": 0,
-          "MaxLength": 69
+          "MaxLength": 9
+        },
+        {
+          "Id": "16",
+          "Desc": "Point of assembling",
+          "MinLength": 0,
+          "MaxLength": 14
+        },
+        {
+          "Id": "17",
+          "Desc": "Delivery schedule no.",
+          "MinLength": 0,
+          "MaxLength": 4
+        },
+        {
+          "Id": "18",
+          "Desc": "Customer reference",
+          "MinLength": 0,
+          "MaxLength": 6
+        },
+        {
+          "Id": "19",
+          "Desc": "Customer document number",
+          "MinLength": 0,
+          "MaxLength": 14
+        },
+        {
+          "Id": "20",
+          "Desc": "Empty 3",
+          "MinLength": 0,
+          "MaxLength": 5
         }
       ]
     },
@@ -366,75 +468,132 @@
       "Elements": [
         {
           "Id": "01",
-          "Desc": "SEGMENT NAME",
+          "Desc": "Version No.",
           "MinLength": 3,
           "MaxLength": 3
         },
         {
           "Id": "02",
-          "Desc": "VERSION NUMBER",
-          "MinLength": 2,
-          "MaxLength": 2
+          "Desc": "Customer part- number",
+          "MinLength": 0,
+          "MaxLength": 22
         },
         {
           "Id": "03",
-          "Desc": "Data &#1074;&#1026;&#8220; receiver no.",
+          "Desc": "Supplier part-number",
           "MinLength": 0,
-          "MaxLength": 9
+          "MaxLength": 22
         },
         {
           "Id": "04",
-          "Desc": "Data &#1074;&#1026;&#8220; sender no.",
+          "Desc": "Country of origin",
           "MinLength": 0,
-          "MaxLength": 9
+          "MaxLength": 3
         },
         {
           "Id": "05",
-          "Desc": "Old transmission no.",
+          "Desc": "Delivery quantity 1",
+          "ImplicitDecimals": 3,
           "MinLength": 0,
-          "MaxLength": 5
+          "MaxLength": 13
         },
         {
           "Id": "06",
-          "Desc": "New transmission no.",
+          "Desc": "Unit of quantity 1",
           "MinLength": 0,
-          "MaxLength": 5
+          "MaxLength": 2
         },
         {
           "Id": "07",
-          "Desc": "Transmission data",
+          "Desc": "Delivery quantity 2",
+          "ImplicitDecimals": 3,
           "MinLength": 0,
-          "MaxLength": 6
+          "MaxLength": 13
         },
         {
           "Id": "08",
-          "Desc": "Sub-supplier no.",
+          "Desc": "Unit of quantity 2",
           "MinLength": 0,
-          "MaxLength": 9
+          "MaxLength": 2
         },
         {
           "Id": "09",
-          "Desc": "Carrier no.",
+          "Desc": "VAT rate",
+          "ImplicitDecimals": 1,
           "MinLength": 0,
-          "MaxLength": 9
+          "MaxLength": 3
         },
         {
           "Id": "10",
-          "Desc": "Key to stockist",
+          "Desc": "Empty 1",
           "MinLength": 0,
           "MaxLength": 1
         },
         {
           "Id": "11",
-          "Desc": "Delivery code",
+          "Desc": "Delivery note item number",
+          "MinLength": 0,
+          "MaxLength": 3
+        },
+        {
+          "Id": "12",
+          "Desc": "Delivery sched. key",
           "MinLength": 0,
           "MaxLength": 1
         },
         {
-          "Id": "12",
-          "Desc": "Empty",
+          "Id": "13",
+          "Desc": "Batch number Key",
           "MinLength": 0,
-          "MaxLength": 69
+          "MaxLength": 15
+        },
+        {
+          "Id": "14",
+          "Desc": "Code usage",
+          "MinLength": 0,
+          "MaxLength": 1
+        },
+        {
+          "Id": "15",
+          "Desc": "Hazardous substances code",
+          "MinLength": 0,
+          "MaxLength": 8
+        },
+        {
+          "Id": "16",
+          "Desc": "Preference status",
+          "MinLength": 0,
+          "MaxLength": 1
+        },
+        {
+          "Id": "17",
+          "Desc": "Dutiable goods",
+          "MinLength": 0,
+          "MaxLength": 1
+        },
+        {
+          "Id": "18",
+          "Desc": "Empty 2",
+          "MinLength": 0,
+          "MaxLength": 1
+        },
+        {
+          "Id": "19",
+          "Desc": "Inventory status",
+          "MinLength": 0,
+          "MaxLength": 1
+        },
+        {
+          "Id": "20",
+          "Desc": "Modified version codes",
+          "MinLength": 0,
+          "MaxLength": 2
+        },
+        {
+          "Id": "21",
+          "Desc": "Original delivery note number",
+          "MinLength": 0,
+          "MaxLength": 8
         }
       ]
     },
@@ -442,75 +601,94 @@
       "Elements": [
         {
           "Id": "01",
-          "Desc": "SEGMENT NAME",
+          "Desc": "Version No.",
           "MinLength": 3,
           "MaxLength": 3
         },
         {
           "Id": "02",
-          "Desc": "VERSION NUMBER",
-          "MinLength": 2,
-          "MaxLength": 2
+          "Desc": "Customer packaging type coded",
+          "MinLength": 0,
+          "MaxLength": 22
         },
         {
           "Id": "03",
-          "Desc": "Data &#1074;&#1026;&#8220; receiver no.",
+          "Desc": "Supplier packaging type coded",
           "MinLength": 0,
-          "MaxLength": 9
+          "MaxLength": 22
         },
         {
           "Id": "04",
-          "Desc": "Data &#1074;&#1026;&#8220; sender no.",
+          "Desc": "Number of packaging",
+          "MinLength": 0,
+          "MaxLength": 13
+        },
+        {
+          "Id": "05",
+          "Desc": "Delivery note item number",
+          "MinLength": 0,
+          "MaxLength": 3
+        },
+        {
+          "Id": "06",
+          "Desc": "Filling capacity",
+          "ImplicitDecimals": 3,
+          "MinLength": 0,
+          "MaxLength": 13
+        },
+        {
+          "Id": "07",
+          "Desc": "Package unit number FROM",
           "MinLength": 0,
           "MaxLength": 9
         },
         {
-          "Id": "05",
-          "Desc": "Old transmission no.",
-          "MinLength": 0,
-          "MaxLength": 5
-        },
-        {
-          "Id": "06",
-          "Desc": "New transmission no.",
-          "MinLength": 0,
-          "MaxLength": 5
-        },
-        {
-          "Id": "07",
-          "Desc": "Transmission data",
-          "MinLength": 0,
-          "MaxLength": 6
-        },
-        {
           "Id": "08",
-          "Desc": "Sub-supplier no.",
+          "Desc": "Package unit number TO",
           "MinLength": 0,
           "MaxLength": 9
         },
         {
           "Id": "09",
-          "Desc": "Carrier no.",
+          "Desc": "Packaging dimensions",
           "MinLength": 0,
-          "MaxLength": 9
+          "MaxLength": 12
         },
         {
           "Id": "10",
-          "Desc": "Key to stockist",
+          "Desc": "Stacking factor",
           "MinLength": 0,
           "MaxLength": 1
         },
         {
           "Id": "11",
-          "Desc": "Delivery code",
+          "Desc": "Warehouse delivery schedule number",
+          "MinLength": 0,
+          "MaxLength": 15
+        },
+        {
+          "Id": "12",
+          "Desc": "Label indicator",
           "MinLength": 0,
           "MaxLength": 1
         },
         {
-          "Id": "12",
+          "Id": "13",
+          "Desc": "Packaging code",
+          "MinLength": 0,
+          "MaxLength": 1
+        },
+        {
+          "Id": "14",
+          "Desc": "Property code",
+          "MinLength": 0,
+          "MaxLength": 1
+        },
+        {
+          "Id": "15",
           "Desc": "Empty",
           "MinLength": 0,
-          "MaxLength": 69
+          "MaxLength": 1
         }
       ]
     },
@@ -518,75 +696,33 @@
       "Elements": [
         {
           "Id": "01",
-          "Desc": "SEGMENT NAME",
+          "Desc": "Version No.",
           "MinLength": 3,
           "MaxLength": 3
         },
         {
           "Id": "02",
-          "Desc": "VERSION NUMBER",
-          "MinLength": 2,
-          "MaxLength": 2
+          "Desc": "Text 1",
+          "MinLength": 0,
+          "MaxLength": 40
         },
         {
           "Id": "03",
-          "Desc": "Data &#1074;&#1026;&#8220; receiver no.",
+          "Desc": "Text 2",
           "MinLength": 0,
-          "MaxLength": 9
+          "MaxLength": 40
         },
         {
           "Id": "04",
-          "Desc": "Data &#1074;&#1026;&#8220; sender no.",
+          "Desc": "Text 3",
           "MinLength": 0,
-          "MaxLength": 9
+          "MaxLength": 40
         },
         {
           "Id": "05",
-          "Desc": "Old transmission no.",
-          "MinLength": 0,
-          "MaxLength": 5
-        },
-        {
-          "Id": "06",
-          "Desc": "New transmission no.",
-          "MinLength": 0,
-          "MaxLength": 5
-        },
-        {
-          "Id": "07",
-          "Desc": "Transmission data",
-          "MinLength": 0,
-          "MaxLength": 6
-        },
-        {
-          "Id": "08",
-          "Desc": "Sub-supplier no.",
-          "MinLength": 0,
-          "MaxLength": 9
-        },
-        {
-          "Id": "09",
-          "Desc": "Carrier no.",
-          "MinLength": 0,
-          "MaxLength": 9
-        },
-        {
-          "Id": "10",
-          "Desc": "Key to stockist",
-          "MinLength": 0,
-          "MaxLength": 1
-        },
-        {
-          "Id": "11",
-          "Desc": "Delivery code",
-          "MinLength": 0,
-          "MaxLength": 1
-        },
-        {
-          "Id": "12",
           "Desc": "Empty",
           "MinLength": 0,
-          "MaxLength": 69
+          "MaxLength": 3
         }
       ]
     },
@@ -594,75 +730,69 @@
       "Elements": [
         {
           "Id": "01",
-          "Desc": "SEGMENT NAME",
+          "Desc": "Version No.",
           "MinLength": 3,
           "MaxLength": 3
         },
         {
           "Id": "02",
-          "Desc": "VERSION NUMBER",
-          "MinLength": 2,
-          "MaxLength": 2
+          "Desc": "Record type counter 711",
+          "MinLength": 0,
+          "MaxLength": 7
         },
         {
           "Id": "03",
-          "Desc": "Data &#1074;&#1026;&#8220; receiver no.",
+          "Desc": "Record type counter 712",
           "MinLength": 0,
-          "MaxLength": 9
+          "MaxLength": 7
         },
         {
           "Id": "04",
-          "Desc": "Data &#1074;&#1026;&#8220; sender no.",
+          "Desc": "Record type counter 713",
           "MinLength": 0,
-          "MaxLength": 9
+          "MaxLength": 7
         },
         {
           "Id": "05",
-          "Desc": "Old transmission no.",
+          "Desc": "Record type counter 714",
           "MinLength": 0,
-          "MaxLength": 5
+          "MaxLength": 7
         },
         {
           "Id": "06",
-          "Desc": "New transmission no.",
+          "Desc": "Record type counter 715",
           "MinLength": 0,
-          "MaxLength": 5
+          "MaxLength": 7
         },
         {
           "Id": "07",
-          "Desc": "Transmission data",
+          "Desc": "Record type counter 716",
           "MinLength": 0,
-          "MaxLength": 6
+          "MaxLength": 7
         },
         {
           "Id": "08",
-          "Desc": "Sub-supplier no.",
+          "Desc": "Record type counter 717",
           "MinLength": 0,
-          "MaxLength": 9
+          "MaxLength": 7
         },
         {
           "Id": "09",
-          "Desc": "Carrier no.",
+          "Desc": "Record type counter 718",
           "MinLength": 0,
-          "MaxLength": 9
+          "MaxLength": 7
         },
         {
           "Id": "10",
-          "Desc": "Key to stockist",
+          "Desc": "Record type counter 719",
           "MinLength": 0,
-          "MaxLength": 1
+          "MaxLength": 7
         },
         {
           "Id": "11",
-          "Desc": "Delivery code",
-          "MinLength": 0,
-          "MaxLength": 1
-        },
-        {
-          "Id": "12",
           "Desc": "Empty",
           "MinLength": 0,
-          "MaxLength": 69
+          "MaxLength": 60
         }
       ]
     }
