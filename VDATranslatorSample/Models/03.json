@@ -345,8 +345,8 @@
         {
           "Id": "01",
           "Desc": "Version No.",
-          "MinLength": 3,
-          "MaxLength": 3
+          "MinLength": 2,
+          "MaxLength": 2
         },
         {
           "Id": "02",
@@ -469,8 +469,8 @@
         {
           "Id": "01",
           "Desc": "Version No.",
-          "MinLength": 3,
-          "MaxLength": 3
+          "MinLength": 2,
+          "MaxLength": 2
         },
         {
           "Id": "02",
@@ -602,8 +602,8 @@
         {
           "Id": "01",
           "Desc": "Version No.",
-          "MinLength": 3,
-          "MaxLength": 3
+          "MinLength": 2,
+          "MaxLength": 2
         },
         {
           "Id": "02",
@@ -697,8 +697,8 @@
         {
           "Id": "01",
           "Desc": "Version No.",
-          "MinLength": 3,
-          "MaxLength": 3
+          "MinLength": 2,
+          "MaxLength": 2
         },
         {
           "Id": "02",
@@ -731,8 +731,8 @@
         {
           "Id": "01",
           "Desc": "Version No.",
-          "MinLength": 3,
-          "MaxLength": 3
+          "MinLength": 2,
+          "MaxLength": 2
         },
         {
           "Id": "02",
