@@ -141,11 +141,20 @@
     "711": {
       "Elements": [
         {
+          "Id": "01",
+          "Desc": "Segment name",
+          "Required": true,
+          "MinLength": 3,
+          "MaxLength": 3,
+          "Constant": "711"
+        },
+        {
           "Id": "02",
           "Desc": "Version no.",
           "Required": true,
           "MinLength": 2,
-          "MaxLength": 2
+          "MaxLength": 2,
+          "Constant": "03"
         },
         {
           "Id": "03",
@@ -186,7 +195,7 @@
         },
         {
           "Id": "09",
-          "Desc": "Carrier no.",
+          "Desc": "Freight Carrier no.",
           "MinLength": 0,
           "MaxLength": 9
         },
@@ -702,13 +711,13 @@
         },
         {
           "Id": "02",
-          "Desc": "Text 1",
+          "Desc": "Text 1 - Parts Generation Status",
           "MinLength": 0,
           "MaxLength": 40
         },
         {
           "Id": "03",
-          "Desc": "Text 2",
+          "Desc": "Text 2 - Shelf Life",
           "MinLength": 0,
           "MaxLength": 40
         },
@@ -723,6 +732,26 @@
           "Desc": "Empty",
           "MinLength": 0,
           "MaxLength": 3
+        }
+      ]
+    },
+    "717": {
+      "Elements": [
+        {
+          "Id": "01",
+          "Desc": "Not Used for SMP",
+          "MinLength": 0,
+          "MaxLength": 128
+        }
+      ]
+    },
+    "718": {
+      "Elements": [
+        {
+          "Id": "01",
+          "Desc": "Not Used for SMP",
+          "MinLength": 0,
+          "MaxLength": 128
         }
       ]
     },
@@ -772,19 +801,19 @@
         },
         {
           "Id": "08",
-          "Desc": "Record type counter 717",
-          "MinLength": 0,
-          "MaxLength": 7
-        },
-        {
-          "Id": "09",
           "Desc": "Record type counter 718",
           "MinLength": 0,
           "MaxLength": 7
         },
         {
-          "Id": "10",
+          "Id": "09",
           "Desc": "Record type counter 719",
+          "MinLength": 0,
+          "MaxLength": 7
+        },
+        {
+          "Id": "10",
+          "Desc": "Record type counter 717",
           "MinLength": 0,
           "MaxLength": 7
         },
