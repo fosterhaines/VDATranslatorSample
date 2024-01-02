@@ -38,9 +38,15 @@ namespace WebApplication.Models
                     //vdatranslator.LoadSchema(HttpContext.Current.Server.MapPath($@".\Models\{transactionType}.Config"));
                     
                     vdatranslator.SchemaFormat = VdatranslatorSchemaFormats.schemaJSON;
-                    vdatranslator.LoadSchema(HttpContext.Current.Server.MapPath($@".\Models\{transactionType}.json"));
+                    //vdatranslator.LoadSchema(HttpContext.Current.Server.MapPath($@".\Models\{transactionType}.json"));
 
-                    var schemaInfo = vdatranslator.DisplaySchemaInfo();
+                    string schemaFile = HttpContext.Current.Server.MapPath($@".\Models\RSSBus_03_711.json");
+
+                    vdatranslator.Config("SchemaDictionaryFile=" + schemaFile);
+
+                    vdatranslator.LoadSchema(schemaFile);
+
+                var schemaInfo = vdatranslator.DisplaySchemaInfo();
 
                     vdatranslator.InputData = rawEdi;
                     vdatranslator.InputFormat = VdatranslatorInputFormats.vifVDA;

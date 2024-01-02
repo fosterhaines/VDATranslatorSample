@@ -173,6 +173,7 @@
     <Content Include="Models\4921.Config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Models\RSSBus_03_711.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <PropertyGroup>
