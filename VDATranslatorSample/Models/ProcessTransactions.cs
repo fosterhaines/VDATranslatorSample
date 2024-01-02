@@ -40,6 +40,8 @@ namespace WebApplication.Models
                     vdatranslator.SchemaFormat = VdatranslatorSchemaFormats.schemaJSON;
                     vdatranslator.LoadSchema(HttpContext.Current.Server.MapPath($@".\Models\{transactionType}.json"));
 
+                    var schemaInfo = vdatranslator.DisplaySchemaInfo();
+
                     vdatranslator.InputData = rawEdi;
                     vdatranslator.InputFormat = VdatranslatorInputFormats.vifVDA;
                     vdatranslator.OutputFormat = VdatranslatorOutputFormats.vofXML;

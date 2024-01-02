@@ -225,7 +225,8 @@
           "Id": "01",
           "Desc": "Version no.",
           "MinLength": 2,
-          "MaxLength": 2
+          "MaxLength": 2,
+          "Constant": "03"
         },
         {
           "Id": "02",
