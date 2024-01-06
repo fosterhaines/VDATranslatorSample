@@ -163,16 +163,6 @@
     <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Models\03.json" />
-    <Content Include="Models\4905.Config" />
-    <Content Include="Models\4907.Config" />
-    <Content Include="Models\4908.Config" />
-    <Content Include="Models\4913.Config" />
-    <Content Include="Models\4913.json" />
-    <Content Include="Models\4916.Config" />
-    <Content Include="Models\4921.Config" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Models\RSSBus_03_711.json" />
     <None Include="packages.config" />
   </ItemGroup>
